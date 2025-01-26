@@ -11,8 +11,8 @@ app = Flask(__name__)
 CORS(app)
 
 # SSL context configuration
-context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-context.load_cert_chain('path/to/cert.pem', 'path/to/key.pem')
+#context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+#context.load_cert_chain('path/to/cert.pem', 'path/to/key.pem')
 
 
 sdk = mercadopago.SDK("APP_USR-4064752143833964-012519-58b2a8dc21995e016c6fe024c3984958-96531112")
