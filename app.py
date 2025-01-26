@@ -1,15 +1,12 @@
 from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS
 import mercadopago
 import os
-#import ssl
 from dotenv import load_dotenv
 
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
-
+app.secret_key = "23KJHKHH454JHJHJNJNN44545454"
 # SSL context configuration
 #context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
 #context.load_cert_chain('path/to/cert.pem', 'path/to/key.pem')
