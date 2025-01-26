@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import mercadopago
 import os
-import ssl
+#import ssl
 from dotenv import load_dotenv
 
 load_dotenv()
